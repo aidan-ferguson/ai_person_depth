@@ -28,4 +28,5 @@ class ImageDepth:
                 align_corners=False,
             ).squeeze()
 
-        return prediction.cpu().numpy()
+        np_arr = prediction.cpu().numpy()
+        return np_arr
